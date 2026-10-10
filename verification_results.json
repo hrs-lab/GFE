@@ -1,0 +1,80 @@
+{
+  "scope": "Deterministic formula checks only. No PDE eigenvalue solve, spectral-gap claim, or convergence study.",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "quadrature": {
+    "epsabs": 2e-12,
+    "epsrel": 2e-12
+  },
+  "beta_kernel": {
+    "symbol_identity_exact": true,
+    "flux_multiplier_identity_exact": true,
+    "critical_derivative": "-7/24"
+  },
+  "negative_rate": {
+    "x": 0.9,
+    "flux_divided_by_C": -1.020308247602446,
+    "analytic_upper_bound": -0.9469823083918336,
+    "quadrature_error_estimate": 1.8911760925141886e-13,
+    "negative_without_projection": true
+  },
+  "relative_right_inverse": {
+    "p": 4,
+    "first_moment_exactly_zero": true,
+    "primitive_and_inverse_identities_exact": true,
+    "test_points": [
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "absolute_residuals": [
+      8.326672684688674e-17,
+      2.7755575615628914e-16,
+      5.551115123125783e-17,
+      6.938893903907228e-18,
+      8.673617379884035e-19,
+      5.421010862427522e-20
+    ],
+    "maximum_absolute_residual": 2.7755575615628914e-16
+  },
+  "feasible_kernel_perturbation": {
+    "p": 4.0,
+    "a": 0.25,
+    "b": 0.75,
+    "C_p": 33.0,
+    "zeroth_moment_exactly_zero": true,
+    "first_moment_exactly_zero": true,
+    "scale": 1.3290650669197883,
+    "sup_norm_h": 0.0025958302088277116,
+    "H_2_h": 0.0030303030303030307,
+    "theta_h": 0.20000000000000004,
+    "relative_flux_error_bound": 0.25000000000000006,
+    "relative_flux_lower_bound": 0.7499999999999999,
+    "relative_flux_upper_bound": 1.25,
+    "rate_upper_bound": 5.0,
+    "quadrature_error_estimate_H2": 3.3643121958338084e-17,
+    "scope": "Checks theorem hypotheses; does not numerically sum the flux series."
+  },
+  "triangular_conditioning": {
+    "10": {
+      "condition_2": 101.99019513592786,
+      "condition_2_divided_by_M_squared": 1.0199019513592786
+    },
+    "100": {
+      "condition_2": 10001.999900019995,
+      "condition_2_divided_by_M_squared": 1.0001999900019996
+    },
+    "1000": {
+      "condition_2": 1000001.9999990001,
+      "condition_2_divided_by_M_squared": 1.0000019999990002
+    }
+  },
+  "all_checks_passed": true
+}
